@@ -1,0 +1,20 @@
+# This is a basic workflow to deploy the LMT Register to a Heroku Statging Container
+
+name: Deploy to Staging
+
+# Controls when the action will run. 
+# This is a manual action
+on:
+  workflow_dispatch:
+
+# A workflow steps
+jobs:
+  Staging:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.4.6 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "app-lmt-staging" #Must be unique in Heroku
+          heroku_email: "thomas.bausemason@outlook.com"
