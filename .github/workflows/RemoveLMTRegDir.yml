@@ -1,0 +1,52 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Remove LMT Register Folder
+
+# Controls when the action will run. 
+# This is a manual action
+on:
+  workflow_dispatch:
+
+# Workflow steps
+jobs:
+  # This workflow contains steps to remove a repository directory
+  RemoveLMTRegDir:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        
+      # Set the user email
+      - name: Set user email
+        run: git config --global user.email "thomas.bausemason@outlook.com"
+
+      # Set the user name
+      - name: Set user name
+        run: git config --global user.name "Thomas Bause Mason"
+
+      # Check Git repository status
+      - name: Check Git repository status
+        run: git status
+
+      # Test message to show path of LMT directory
+      # - name: Show path of LMT register directory
+      #  run: pwd
+        
+      # Remove the existing LMT directory
+      - name: Delete the LMT register directory
+        run: git rm -r dist/lmt
+
+      # Commit the changes before adding the new LMT directory
+      - name: Commit changes to repo
+        run: git commit . -m "Deleted LMT Register"
+
+      # Check Git repository status
+      - name: Check Git repository status
+        run: git status
+  
+      # Runs a set of commands using the runners shell
+      - name: Push changes to repo
+        run: git push
