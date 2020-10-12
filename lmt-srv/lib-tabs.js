@@ -11,6 +11,7 @@ module.exports.html = function () {
     tabs_html += mustache.render(tab_template, { name: "group-table", text: "table group", url: "/table-group" })
     tabs_html += mustache.render(tab_template, { name: "tool-validate", text: "validate tool", url: "/tool-validate" })
     tabs_html += mustache.render(tab_template, { name: "tool-diff", text: "diff tool", url: "/tool-diff" })
+    tabs_html += mustache.render(tab_template, { name: "tool-convert", text: "conversion tool", url: "/tool-convert" })
     tabs_html += `</ul>`
     return tabs_html
 }

@@ -1,6 +1,6 @@
 {
-    "app_title": "Register: Language Metadata Table SMPTE ST xxxx",
-    "app_description": "LMT viewer",
+    "app_title": "Register: Language Metadata Table",
+    "app_description": "<emphasis><strong>PREVIEW</strong> LMT pending development as SMPTE ST xxxx</emphasis>",
     "version": "0.8",
     "port": 3000,
     "static": {
@@ -14,6 +14,7 @@
             "full_width_end": "</div></div></div></div>"
         },
         "control-doc":"lmt-control.pdf",
+        "control-doc-download":"smpte-st-xxxx(online):2020.pdf",
         "lmt": "lmt.xml",
         "lmt_ref": "lmt-ref.xml",
         "narrative": "lmt-narrative.md",
@@ -30,6 +31,7 @@
     },
     "url_prefix": "",
     "cache": "dist/cache",
+    "upload_folder":"/tmp",
     "logging": {
         "_help": "logging goes to stderr by default - see https://github.com/pinojs/pino/blob/HEAD/docs/transports.md",
         "level": "info",

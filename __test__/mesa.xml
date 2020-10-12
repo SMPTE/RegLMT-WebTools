@@ -300,7 +300,7 @@
         <termName>Bahasa Indonesia</termName>
         <termVocabulary>Language Metadata Table Master</termVocabulary>
         <termNote label='Audio Language Display Name 1'>Bahasa Indonesia</termNote>
-        <termNote label='Audio Language Tag'>id</termNote>
+        <termNote label='Audio Language Tag'>id2</termNote>
         <termNote label='Code'>https://smpte-ra.org/register/lmt/code/id</termNote>
         <termNote label='Long Description 1'>Bahasa Indonesia</termNote>
         <termNote label='Long Description 2'>Indonesian</termNote>
@@ -2001,7 +2001,7 @@
         <termVocabulary>Language Metadata Table Master</termVocabulary>
         <termNote label='Audio Language Display Name 1'>ਪੰਜਾਬੀ</termNote>
         <termNote label='Audio Language Display Name 2'>پن٘جابی</termNote>
-        <termNote label='Audio Language Tag'>pa</termNote>
+        <termNote label='Audio Language Tag'>pa2</termNote>
         <termNote label='Code'>https://smpte-ra.org/register/lmt/code/pa</termNote>
         <termNote label='Long Description 1'>Punjabi</termNote>
         <termNote label='Long Description 2'>Panjabi</termNote>

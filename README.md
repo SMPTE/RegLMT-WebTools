@@ -2,6 +2,8 @@
 
 Simple app to serve the SMPTE Language Metadata Table to Machines and Humans
 
+* v0.9 updated - refactored XML to meet object model
+* v0.8 styled to SMPTE website
 
 ## Installation
 
@@ -33,7 +35,7 @@ then start the server
 ### Test it works
 
 To test the page locally, you need to start the server and connect a browser to the
-correct port. The default would be to connect to `http://localhost:3000` 
+correct port. The default would be to connect to `http://localhost:3000`
 
 ### File Structure
 
