@@ -43,7 +43,7 @@
     "marked": "^2.0.0",
     "mustache": "^4.0.1",
     "pino": "^6.2.1",
-    "prismjs": "^1.20.0",
+    "prismjs": "^1.23.0",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {}
